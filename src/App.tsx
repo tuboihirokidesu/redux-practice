@@ -8,11 +8,12 @@ type VoteManga = string[];
 
 const App = () => {
   const count = useSelector<CounterState, number>((state) => state.count);
-  const votesManga: VoteManga = ['鬼滅の刃', 'ONE PIECE', 'ハイキュー!!!'];
+  const votesManga: VoteManga = ['Aさん', 'Bさん', 'Cさん'];
+
   return (
     <div className={AppCSS.container}>
       <div className={AppCSS.header}>
-        <h1>Redux made easy</h1>
+        <h1>投票箱</h1>
         <h2>Total Votes:{count}</h2>
       </div>
       {votesManga.map((vote, i) => (

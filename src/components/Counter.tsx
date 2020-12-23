@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { increment, decrement } from '../action';
+import CounterCSS from './Counter.module.css';
 
 interface Props {
   name: string;
@@ -17,8 +18,9 @@ const Counter: React.FC<Props> = ({ name }) => {
     dispatch(increment());
     setVotes(votes + 1);
   };
+
   return (
-    <div>
+    <div className={CounterCSS.header}>
       <h2>{name}</h2>
       <h3>{`Votes: ${votes}`}</h3>
       <div>
