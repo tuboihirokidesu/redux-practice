@@ -6,7 +6,6 @@
     "module": "es6", //動作環境がサーバサイドの Node.js であれば、ここは commonjs を指定する
     "strict": true,
     "noEmit": true,
-    "baseUrl": "src", //相対パスで書かないといけないところを絶対パスで記述可能に
     "isolatedModules": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
