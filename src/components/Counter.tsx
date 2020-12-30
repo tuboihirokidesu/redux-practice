@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { increment, decrement } from '../action';
-import CounterCSS from './Counter.module.css';
+import { increment, decrement } from 'action';
+import CounterCSS from 'Counter.module.css';
 
 interface Props {
   name: string;
