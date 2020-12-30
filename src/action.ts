@@ -4,7 +4,6 @@ export const ActionType = {
 } as const;
 
 type ValueOf<T> = T[keyof T];
-
 export type Action = {
   type: ValueOf<typeof ActionType>;
   amount?: number;

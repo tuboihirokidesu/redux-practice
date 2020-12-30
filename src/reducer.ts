@@ -1,5 +1,5 @@
 import { Reducer } from 'redux';
-import { Action, ActionType as Type, ActionType } from './action';
+import { Action, ActionType as Type } from './action';
 
 export type CounterState = {
   count: number;
@@ -23,6 +23,7 @@ export const counterReducer: Reducer<CounterState, Action> = (
       };
 
     default:
+      const check: never = action.type;
       return state;
   }
 };
