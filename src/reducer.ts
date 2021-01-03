@@ -23,7 +23,6 @@ export const counterReducer: Reducer<CounterState, Action> = (
       };
 
     default:
-      const check: never = action.type;
       return state;
   }
 };

@@ -6,7 +6,7 @@ import AppCSS from './App.module.css';
 
 type VoteManga = string[];
 
-const App = () => {
+const App: React.FC = () => {
   const count = useSelector<CounterState, number>((state) => state.count);
   const votesManga: VoteManga = ['Aさん', 'Bさん', 'Cさん'];
 

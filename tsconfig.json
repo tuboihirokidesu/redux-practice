@@ -3,7 +3,7 @@
     // "strictNullChecks": true,
     // "noImplicitAny": true,//strict:trueに含まれる。
     "target": "es6",
-    "module": "es6", //動作環境がサーバサイドの Node.js であれば、ここは commonjs を指定する
+    "module": "commonjs", //動作環境がサーバサイドの Node.js であれば、ここは commonjs を指定する
     "strict": true,
     "noEmit": true,
     "isolatedModules": true,
